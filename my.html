@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Laptop Store</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<h1 class="brand">Laptop Store</h1>
+				<nav>
+					<a href="#products">Products</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h2>Find your perfect laptop</h2>
+					<p>Quality laptops for work, study and play — curated picks at great prices.</p>
+					<a class="btn" href="#products">Shop Laptops</a>
+				</div>
+			</section>
+
+			<section id="products" class="container products-section">
+				<h3>Featured Laptops</h3>
+				<div id="products-grid" class="products-grid">
+					<!-- Products injected by JS -->
+				</div>
+			</section>
+
+			<div id="product-modal" class="modal" aria-hidden="true">
+				<div class="modal-content">
+					<button id="modal-close" class="modal-close">×</button>
+					<div id="modal-body"></div>
+				</div>
+			</div>
+
+			<section id="contact" class="container contact-section">
+				<h3>Contact Us</h3>
+				<form id="contact-form" class="contact-form">
+					<label>Full name<input type="text" id="name" required></label>
+					<label>Email<input type="email" id="email" required></label>
+					<label>Message<textarea id="message" rows="4" required></textarea></label>
+					<button type="submit" class="btn">Send Message</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">© 2026 Laptop Store — Demo site</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
